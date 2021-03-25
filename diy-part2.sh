@@ -15,9 +15,23 @@
 
 # ==========luci-app-==========
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone https://github.com/vernesong/OpenClash package/OpenClash
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # ==========luci-theme-==========
 cd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+
+# ==========luci-app-bypass==========
+cd ..
+git clone https://github.com/garypang13/luci-app-bypass
+git clone https://github.com/garypang13/smartdns-le
+svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
+cd ..
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
