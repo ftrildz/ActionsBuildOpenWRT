@@ -32,6 +32,3 @@ svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng
 svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go
 svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus
 svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
-cd ..
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
-find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
