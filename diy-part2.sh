@@ -17,7 +17,6 @@
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy
-git clone https://github.com/vernesong/OpenClash package/OpenClash
 
 # ==========luci-theme-==========
 cd package/lean
