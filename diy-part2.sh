@@ -15,7 +15,6 @@
 
 # ==========luci-app-==========
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy
 
 # ==========luci-theme-==========
@@ -25,9 +24,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
 # ==========luci-app-bypass==========
 cd ..
-git clone https://github.com/garypang13/luci-app-bypass
-git clone https://github.com/garypang13/smartdns-le
+git clone https://github.com/garypang13/openwrt-bypass
 svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng
 svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go
 svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus
-svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
