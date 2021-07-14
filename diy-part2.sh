@@ -22,9 +22,6 @@ cd package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
-# ==========luci-app-bypass==========
+# ==========luci-app-==========
 cd ..
-git clone https://github.com/garypang13/openwrt-bypass
-svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
